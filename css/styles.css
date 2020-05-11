@@ -1,0 +1,52 @@
+/*------------------------------------*\
+  LAYOUT
+\*------------------------------------*/
+body {
+    height: 90vh;
+
+    background-image: linear-gradient(to right, #E681D5, #C682FF, #804776);
+    background-size: auto;
+
+    font-family: arial;
+}
+
+/*------------------------------------*\
+  MENU
+\*------------------------------------*/
+
+.menu {
+    background-color: #EBE1F9;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+a {
+    color: #BF6BB1;
+
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+.site-subtitle, .site-title {
+    color: whitesmoke;
+    
+    text-align: center;
+}
+
+.site-subtitle {
+    font-style: italic;
+}
