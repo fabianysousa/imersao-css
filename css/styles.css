@@ -45,6 +45,7 @@ header {
   position: fixed;
   top: 0;
   width: 100vw;
+  padding: 5px;
 }
   
 .menu ul {
@@ -70,8 +71,9 @@ header {
 
 .site-title {
   color: whitesmoke;
-
+  text-shadow: #000 1px 1px 1px;
   text-align: center;
+  font-size: 3em;
 }
   
 .site-subtitle {
