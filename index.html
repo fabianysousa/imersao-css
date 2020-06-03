@@ -1,82 +1,121 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Fabiany | Web Developer</title>
-	<link rel="icon" href="../imersao-css/img/icon-title.png" type="image/png">
-	<link rel="stylesheet" href="css/styles.css">
-	<link href="https://fonts.googleapis.com/css2?family=Courgette&family=
-	Source+Sans+Pro&family=VT323&display=swap" rel="stylesheet">
- 
-</head>
-<body>
-	<header>
-		<nav class="menu">
-			<ul>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Contacts</a></li>
-			</ul>
-		</nav>
-		
-		<div class="chamada">
-			<h1 class="site-title">'Hello, world!'</h1>
-			<h2 class="site-subtitle">welcome to my portfolio</h2>
-		</div>
-
-	</header>
-
-	<section class="portifolio">
-		<div class="sobre">
-			<h2>About me</h2>
-
-			<img src="./img/me.jpg" alt="eu">
-
-			<p>
-				Hello! My name is Fabiany, I'm 22 years old.<br>
-				I am a student of Software Engineering at the <br>
-				Federal University of Ceará and I live in Quixadá-CE.
-			</p>
-		</div>
-
-		<div class="projetos">
-			<h2>Main projects</h2>
-			<div class="grid">
-				<figure>
-					<img class="img-projetos" src="./img/Home1-ANIMATION.gif" alt="MyPilas">
-					<figcaption>MyPilas</figcaption>
-				</figure>
-				<figure>
-					<img class="img-projetos" src="./img/Home1-ANIMATION.gif" alt="MyPilas">
-					<figcaption>MyPilas</figcaption>
-				</figure>
-				<figure>
-					<img class="img-projetos" src="./img/Home1-ANIMATION.gif" alt="MyPilas">
-					<figcaption>MyPilas</figcaption>
-				</figure>
-			</div>
-		</div>
-
-		<div class="contatos">
-			<h2>Contacts</h2>
-				<ul>
-					<li>
-						<a href="https://github.com/fabianysousa">
-							<img  class="img-contatos" src="./img/github-logo.png" alt="Github">Github
-						</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/fabiany-sousa/">
-							<img class="img-contatos" src="./img/linkedin-logo.png" alt="Linkedin">Linkedin
-						</a>
-					</li>
-					<li><a href="">
-						<img class="img-contatos" src="./img/email-logo.png"> E-mail</a>
-					</li>
-				</ul>
-			<p></p>
-		</div>
-	</section>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fabiany | Web Developer</title>
+    <link rel="icon" href="./img/icon-title.png" type="image/png" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">    <link rel="stylesheet" href="css/styles.css" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Courgette&family=
+    Source+Sans+Pro&family=VT323&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body>
+    <!----------------------------MENU-------------------------------->
+    <header>
+      <div class="menu">
+        <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="portfolio">
+      <!---------------------------CHAMADA------------------------------>
+      <a name="home" id="home"></a>
+      <div class="container chamada">
+        <h1 class="site-titulo">'Hello, world!'</h1>
+        <h2 class="site-subtitulo">welcome to my portfolio</h2>
+      </div>
+      <!---------------------------SOBRE-------------------------------->
+      <a name="about" id="about"></a>
+      <div class="container sobre">
+        <h2 class="sobre-titulo">About me</h2>
+        <img src="./img/me.jpg" alt="eu" />
+        <p>
+          Hello! My name is Fabiany, I'm 22 years old.<br />
+          I am a student of Software Engineering at the <br />
+          Federal University of Ceará and I live in Quixadá-CE. <br />
+          I have interested in web development,<br />
+          front-end, UX, database.
+        </p>
+      </div>
+      <!-------------------------HABILIDADES---------------------------->
+      <a name="skills" id="skills"></a>
+      <div class="container habilidades">  
+        <div>
+          <h2 class="habilidades-titulo">Skills</h2>
+        </div>
+        <div class="habilidades-lista">
+          <div class="habilidades-lista-um">
+            <ul>
+              <li>😊 Scrum</li>
+              <li>😍 HTML</li>
+              <li>💃 CSS</li>
+              <li>🤩 BEM</li>
+              <li>🤗 Bootstrap</li>
+            </ul>
+          </div>
+          <div class="habilidades-lista-dois">
+            </ul> 
+            <li>😘 Materialize</li>
+            <li>🙆‍♀️ JavaScript</li>
+            <li>🙏🏻 Java</li>
+            <li>🏋🏻‍♂️ C++</li>
+            <li>😮 PostgreSQL</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+      <!--------------------------CONTATOS------------------------------>
+      <a name="contacts" id="contacts"></a>
+      <div class="container contatos">
+        <h2 class="contatos-titulo">Contacts</h2>
+          <ul>
+            <li>
+              <a href="https://github.com/fabianysousa">
+                <img
+                class="img-contatos"
+                src="./img/github-logo.png"
+                alt="Github"
+                />Github
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/fabiany-sousa/">
+                <img
+                class="img-contatos"
+                src="./img/linkedin-logo.png"
+                alt="Linkedin"
+                />Linkedin
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img class="img-contatos" 
+                src="./img/email-logo.png" 
+                />E-mail
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!---------------------------FOOTER----------------------------->
+      <footer>
+        Web Portfolio &copy;2020 Created by 
+        <a href="https://github.com/fabianysousa">
+          Fabiany de Sousa Costa
+        </a>
+      </footer>
+    </body>
+    <script src="./js/title-effect.js"></script>
 </html>

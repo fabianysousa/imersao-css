@@ -7,17 +7,16 @@
   margin: 0;
   box-sizing: border-box;
 }
-  
+
 body {
-  height: 425vh;
+  height: 100%;
 
   background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
   background-repeat: no-repeat;
-  
 
   font-family: 'Source Sans Pro', sans-serif;
 }
-  
+
 @media (min-width: 400px) {
   body {
     font-size: 18px;
@@ -29,30 +28,37 @@ body {
     font-size: 22px;
   }
 }
-  
-header {
+
+.container {
   display: flex;
+
+  width: 100%;
+}
+
+/*------------------------------------*\
+#SEÇÃO-MENU
+\*------------------------------------*/
+
+header {
   flex-wrap: wrap;
-  height: 100vh;
   justify-content: center;
   align-items: center;
 }
 
-/*------------------------------------*\
-#SECTION-MENU
-\*------------------------------------*/
-
 .menu {
-  background-color: white;
   position: fixed;
+  width: 100%;
   top: 0;
-  width: 100vw;
-  padding: 5px;
+
   font-family: 'VT323', monospace;
+
+  background-color: white;
 }
-  
+
 .menu ul {
   display: flex;
+  margin-top: 15px;
+
   justify-content: space-around;
 }
 
@@ -61,135 +67,146 @@ header {
 }
 
 .menu a {
-  color: #242424;
   display: block;
-  padding: 10px;
+
   text-decoration: none;
+
+  color: #242424;
 }
 
 /*------------------------------------*\
-#SECTION-TITLE
+#SEÇÃO-CHAMADA
 \*------------------------------------*/
 
 .chamada {
-  height: 100vh;
-  padding-top: 45vh;
+  padding-top: 20%;
+  padding-bottom: 15%;
 }
 
-.site-title {
-  color: whitesmoke;
-  text-shadow: #000 1px 1px 1px;
-  text-align: center;
+.site-titulo {
   font-family: 'VT323', monospace;
-  font-size: 3.5em;
-}
+  font-size: 4em;
 
-.site-subtitle {
-  color: #424242;
-  
   text-align: center;
-  font-family: 'Courgette', cursive;
-  font-style: italic;
-  font-weight: lighter;
-  font-size: 1.5em;
-}
-
-
-
-/*------------------------------------*\
-#SECTION-PORTIFOLIO
-\*------------------------------------*/
-
-.portifolio {
-  text-align: center;
-}
-
-.portifolio h2 {
-  margin-bottom: 1em;
-  font-family: 'VT323', monospace;
-  font-size: 3em;
-  text-align: center;
-  color: #424242;
   text-shadow: whitesmoke 1px 5px 1px;
 
+  color: #424242;
+}
+
+.site-subtitulo {
+  font-family: 'Courgette';
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 1.2em;
+
+  text-align: center;
+
+  color: #424242;
 }
 
 /*------------------------------------*\
-#SECTION-PROJETOS
+#SEÇÃO-PORTIFOLIO
 \*------------------------------------*/
 
-.projetos {
-  height: 100vh;
-  padding-top: 25vh;
-}
-
-.projetos p {
-  padding: 2em;
-}
-
-/*
-.projetos .grid {
-  display: grid;
-  gap: 2em;
-}
-
-@media (min-width: 650px) {
-  .projetos .grid {
-    grid-template-columns: 240px 240px 240px;
-  }
-}
-
-*/
-
-.projetos .grid {
+.chamada,
+.sobre,
+.habilidades,
+.contatos {
   display: block;
+  margin: auto;
+
+  text-align: center;
+
+  align-content: center;
+  justify-content: center;
 }
 
-@media (min-width: 650px) {
-  .projetos .grid{
-    display: inline-block;
-  }
-}
+.sobre-titulo,
+.habilidades-titulo,
+.contatos-titulo {
+  font-family: 'VT323', monospace;
+  font-size: 2em;
 
-.img-projetos {
-  height: 140px;
-  width: 245px;
-}
+  text-shadow: whitesmoke 1px 5px 1px;
 
+  color: #424242;
+}
 
 /*------------------------------------*\
-#SECTION-sobre
+#SEÇÃO-SOBRE
 \*------------------------------------*/
 
 .sobre {
-  height: 100vh;
-  padding-top: 25vh;
+  padding-top: 12%;
+  padding-bottom: 12%;
 }
 
 .sobre p {
-  justify-content: center;
-  text-align: center;
   color: #424242;
 }
 
 .sobre img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2em;
+
+  width: 120px;
+  height: 120px;
+
+  border: solid 0.5px whitesmoke;
+  border-radius: 50%;
 }
 
-.contatos {
-  height: 100vh;
-  padding-top: 25vh;
-  margin-top: 5em;
+/*------------------------------------*\
+#SEÇÃO-HABILIDADES
+\*------------------------------------*/
+
+.habilidades {
+  padding-top: 12%;
+  padding-bottom: 10%;
+
+  color: #424242;
 }
-.contatos li {
+
+.habilidades li {
+  margin: 1em;
+
   list-style: none;
   text-decoration: none;
+
+  border-top: dotted 3px whitesmoke;
+  border-radius: 10px;
+}
+
+.habilidades-lista {
+  display: inline-flex;
+}
+
+.habilidades-lista-um,
+.habilidades-lista-dois {
+  margin: 1em;
+  padding-bottom: 1em;
+}
+
+/*------------------------------------*\
+#SEÇÃO-CONTATOS
+\*------------------------------------*/
+
+.contatos {
+  padding-top: 10%;
+  padding-bottom: 15%;
+}
+
+.contatos ul {
+  padding-top: 1em;
+
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.contatos a {
+  color: #424242;
 }
 
 .img-contatos {
@@ -197,7 +214,18 @@ header {
   width: 20px;
 }
 
-.botao-down {
-  height: 20;
-  width: 20;
+/*------------------------------------*\
+#SEÇÃO-RODAPÉ
+\*------------------------------------*/
+footer {
+  padding: 10px;
+
+  width: 100%;
+
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+
+  background-color: white;
+  color: #242424;
 }
