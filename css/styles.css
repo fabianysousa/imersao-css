@@ -75,36 +75,6 @@ header {
 }
 
 /*------------------------------------*\
-#SEÇÃO-CHAMADA
-\*------------------------------------*/
-
-.chamada {
-  padding-top: 20%;
-  padding-bottom: 15%;
-}
-
-.site-titulo {
-  font-family: 'VT323', monospace;
-  font-size: 4em;
-
-  text-align: center;
-  text-shadow: whitesmoke 1px 5px 1px;
-
-  color: #424242;
-}
-
-.site-subtitulo {
-  font-family: 'Courgette';
-  font-style: italic;
-  font-weight: lighter;
-  font-size: 1.2em;
-
-  text-align: center;
-
-  color: #424242;
-}
-
-/*------------------------------------*\
 #SEÇÃO-PORTIFOLIO
 \*------------------------------------*/
 
@@ -133,6 +103,49 @@ header {
 }
 
 /*------------------------------------*\
+#SEÇÃO-CHAMADA
+\*------------------------------------*/
+
+.chamada {
+  padding-top: 20%;
+  padding-bottom: 15%;
+}
+
+@media (max-width: 400px) {
+  .chamada {
+    padding-top: 45%;
+    padding-bottom: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .chamada {
+    padding-top: 30%;
+  }
+}
+
+.site-titulo {
+  font-family: 'VT323', monospace;
+  font-size: 4em;
+
+  text-align: center;
+  text-shadow: whitesmoke 1px 5px 1px;
+
+  color: #424242;
+}
+
+.site-subtitulo {
+  font-family: 'Courgette';
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 1.2em;
+
+  text-align: center;
+
+  color: #424242;
+}
+
+/*------------------------------------*\
 #SEÇÃO-SOBRE
 \*------------------------------------*/
 
@@ -140,12 +153,40 @@ header {
   margin-top: 8%;
   padding-top: 5%;
   padding-bottom: 5%;
+
   border: solid 1px white;
   box-shadow: whitesmoke 20px 20px;
 }
 
+@media (max-width: 400px) {
+  .sobre {
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 600px) {
+  .sobre {
+    margin-top: 19%;
+  }
+}
+
 .sobre p {
   color: #424242;
+}
+
+@media (max-width: 400px) {
+  .sobre p {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+@media (max-width: 600px) {
+  .sobre p {
+    font-size: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 .sobre img {
@@ -169,6 +210,18 @@ header {
   padding-bottom: 10%;
 
   color: #424242;
+}
+
+@media (max-width: 400px) {
+  .habilidades {
+    padding-top: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .habilidades {
+    margin-top: 10%;
+  }
 }
 
 .habilidades li {
@@ -198,6 +251,20 @@ header {
 .contatos {
   padding-top: 10%;
   padding-bottom: 15%;
+}
+
+@media (max-width: 400px) {
+  .contatos {
+    padding-top: 40%;
+    padding-bottom: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contatos {
+    padding-top: 15%;
+    padding-bottom: 25%;
+  }
 }
 
 .contatos ul {
@@ -232,4 +299,10 @@ footer {
 
   background-color: white;
   color: #242424;
+}
+
+@media (max-width: 400px) {
+  .footer {
+    font-size: 10px;
+  }
 }
